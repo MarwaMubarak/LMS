@@ -109,8 +109,10 @@ LMS (GitHub)
 
 1. **GET /books** - Search for books by title or author.
    - **Example**: `GET /books?title=koko`
+   - Authentication: Bearer token required.
    
 2. **POST /books** - Add a new book (only for Admins).
+   - Authentication: Bearer token required.
    - **Request Body**:
      ```json
      {
@@ -124,6 +126,7 @@ LMS (GitHub)
 ### **Borrowing History**
 
 1. **POST /borrow** - Borrow a book.
+   -Authentication: Bearer token required.
    - **Request Body**:
      ```json
      {
@@ -134,7 +137,7 @@ LMS (GitHub)
      ```
 
 2. **GET /borrow/history/{userId}** - Get the borrowing history for a specific user.
-
+   - Authentication: Bearer token required.
 ### **Users**
 
 1. **POST /users/register** - Register a new user (Admin or Patron).
