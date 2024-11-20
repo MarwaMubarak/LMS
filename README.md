@@ -61,6 +61,42 @@ Python is used to handle tasks such as data generation and exporting unused book
   - The **Spring Boot application** is containerized and linked to the database container.
   - **Docker Compose** is used to set up the multi-container environment, allowing the backend and database to run together.
 
+---
+## Project Structure
+bash
+Copy code
+LMS (GitHub)
+├── lms
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java/com/lms
+│   │   │   │   ├── config         # Configuration files for the application
+│   │   │   │   ├── controller     # REST controllers for API endpoints
+│   │   │   │   ├── dto            # Data Transfer Objects
+│   │   │   │   ├── mapper         # Mapping logic between entities and DTOs
+│   │   │   │   ├── model          # Entity models for database tables
+│   │   │   │   ├── repository     # JPA repositories for data access
+│   │   │   │   ├── security       # Security configurations (e.g., authentication)
+│   │   │   │   ├── service        # Business logic services
+│   │   │   │   ├── utility        # Helper utilities
+│   │   │   │   └── LmsApplication.java # Main Spring Boot application
+│   │   ├── resources
+│   │   │   └── application.yml    # Configuration file
+│   ├── test                       # Test files for the application
+│   ├── dockerfile                 # Dockerfile for containerization
+│   ├── compose.yaml               # Docker Compose configuration
+│   ├── pom.xml                    # Maven project descriptor
+├── lms-py/                        # Auxiliary Python project for additional functionality
+│   ├── lms.py                     # Python script related to the LMS
+│   ├── books.csv                  # Sample data for books
+│   ├── borrowing_histories.csv    # Sample data for borrowing histories
+│   ├── not_borrowed_last_6_months.csv # Data for books not borrowed in the last six months
+│   ├── users.csv                  # Sample data for users
+├── env.yml                        # Environment-specific configuration
+├── Instructions to set up and run the project.pdf # Setup guide
+├── README.md                      # Project documentation
+├── Schema.pdf                     # Database schema
+├── APIs_Documentation.pdf  
 
 ---
 
