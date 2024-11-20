@@ -63,8 +63,7 @@ Python is used to handle tasks such as data generation and exporting unused book
 
 ---
 ## Project Structure
-bash
-Copy code
+```
 LMS (GitHub)
 ├── lms
 │   ├── src
@@ -86,6 +85,8 @@ LMS (GitHub)
 │   ├── dockerfile                 # Dockerfile for containerization
 │   ├── compose.yaml               # Docker Compose configuration
 │   ├── pom.xml                    # Maven project descriptor
+│   ├── target
+│   │   └── lms-0.0.1-SNAPSHOT.jar # Compiled Spring Boot application JAR
 ├── lms-py/                        # Auxiliary Python project for additional functionality
 │   ├── lms.py                     # Python script related to the LMS
 │   ├── books.csv                  # Sample data for books
@@ -96,8 +97,10 @@ LMS (GitHub)
 ├── Instructions to set up and run the project.pdf # Setup guide
 ├── README.md                      # Project documentation
 ├── Schema.pdf                     # Database schema
-├── APIs_Documentation.pdf  
-
+├── APIs_Documentation.pdf         # API documentation
+   
+ 
+```
 ---
 
 ## API Endpoints
